@@ -1,7 +1,10 @@
 # EFCourse
 
-Instruccions execució:
+## Instruccions execució:
+```
 dotnet run
+```
+
 Accés: http://localhost:5069/
 
 
