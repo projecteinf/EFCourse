@@ -15,4 +15,8 @@ mv Models Libraries/Model/
 mkdir Libraries/DataAccess/Data
 rm Libraries/DataAccess/Class1.cs 
 rm Libraries/Model/Class1.cs 
+
+# Afegir referències a llibreries
+dotnet add UdemyCourse.csproj reference Libraries/Model/Model.csproj 
+dotnet add UdemyCourse.csproj reference Libraries/DataAccess/DataAccess.csproj 
 code .
