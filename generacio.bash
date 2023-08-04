@@ -22,7 +22,9 @@ dotnet add UdemyCourse.csproj reference Libraries/DataAccess/DataAccess.csproj
 dotnet add Libraries/DataAccess/DataAccess.csproj reference Libraries/Model/Model.csproj
 
 dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 cd Libraries/DataAccess/
 dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 cd ../..
 code .
