@@ -20,4 +20,9 @@ rm Libraries/Model/Class1.cs
 dotnet add UdemyCourse.csproj reference Libraries/Model/Model.csproj 
 dotnet add UdemyCourse.csproj reference Libraries/DataAccess/DataAccess.csproj 
 dotnet add Libraries/DataAccess/DataAccess.csproj reference Libraries/Model/Model.csproj
+
+dotnet add package Microsoft.EntityFrameworkCore
+cd Libraries/DataAccess/
+dotnet add package Microsoft.EntityFrameworkCore
+cd ../..
 code .
