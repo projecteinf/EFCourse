@@ -19,4 +19,5 @@ rm Libraries/Model/Class1.cs
 # Afegir referències a llibreries
 dotnet add UdemyCourse.csproj reference Libraries/Model/Model.csproj 
 dotnet add UdemyCourse.csproj reference Libraries/DataAccess/DataAccess.csproj 
+dotnet add Libraries/DataAccess/DataAccess.csproj reference Libraries/Model/Model.csproj
 code .
