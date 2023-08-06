@@ -2,6 +2,7 @@
 
 ## Instruccions execució:
 ```
+bash run.bash 
 dotnet run
 ```
 
