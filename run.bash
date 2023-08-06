@@ -1,0 +1,1 @@
+sudo -S sh -c /home/projecteinf/Projectes/EF/Course/dockerRun.bash
