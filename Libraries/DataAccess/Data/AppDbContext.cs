@@ -7,5 +7,6 @@ namespace UdemyCourse.DataAccess {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Genre> Genres { get; set; }
     }
 }
