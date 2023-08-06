@@ -16,3 +16,10 @@ use EFCourse;
 select * from Categories;
 go
 ```
+
+# Veure totes les migracions
+```sql
+use EFCourse;
+select * from __EFMigrationsHistory
+go
+```
