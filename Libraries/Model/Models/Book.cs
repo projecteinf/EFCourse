@@ -25,4 +25,5 @@ public class Book
     [ForeignKey("Publisher")] 
     public Guid PublisherId { get; set; } // Propietat de navegació
     public Publisher Publisher { get; set; }  // Creació de la relació
+    public ICollection<BookAuthor> BookAuthors { get; set; }
 }

@@ -13,5 +13,5 @@ public class Author
             return $"{FirstName} {LastName}"; 
         }
     }
-    
+    public ICollection<BookAuthor> BookAuthors { get; set; }
 }
