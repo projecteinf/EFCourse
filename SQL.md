@@ -28,3 +28,12 @@ use EFCourse;
 exec sp_columns Genres
 go
 ```
+
+# Describe table - estructura columnes FK i PK
+```sql
+use EFCourse;
+:setvar SQLCMDMAXVARTYPEWIDTH 30
+:setvar SQLCMDMAXFIXEDTYPEWIDTH 30
+select * from information_schema.key_column_usage where constraint_name like 'FK_%'
+go
+```
