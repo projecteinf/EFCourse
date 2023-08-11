@@ -34,6 +34,6 @@ go
 use EFCourse;
 :setvar SQLCMDMAXVARTYPEWIDTH 30
 :setvar SQLCMDMAXFIXEDTYPEWIDTH 30
-select * from information_schema.key_column_usage where constraint_name like 'FK_%'
+select TABLE_NAME, COLUMN_NAME, CONSTRAINT_NAME from information_schema.key_column_usage where constraint_name like 'FK_%'
 go
 ```
