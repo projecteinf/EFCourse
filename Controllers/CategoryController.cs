@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using UdemyCourse.DataAccess;
+using UdemyCourse.Model.Models;
 
 namespace UdemyCourse.Controllers
 {
@@ -16,6 +17,7 @@ namespace UdemyCourse.Controllers
         }
         public IActionResult Index()
         {
+            List<Category> objList = _db.Categories.ToList();
             return View();
         }
     }
