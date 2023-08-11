@@ -23,6 +23,6 @@ public class Book
     public BookDetail BookDetail { get; set; }  // Creació de la relació
     // Relació 1 a N
     [ForeignKey("Publisher")] 
-    public Guid PublisheId { get; set; } // Propietat de navegació
+    public Guid PublisherId { get; set; } // Propietat de navegació
     public Publisher Publisher { get; set; }  // Creació de la relació
 }
