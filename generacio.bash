@@ -26,7 +26,7 @@ dotnet add Libraries/DataAccess/DataAccess.csproj reference Libraries/Model/Mode
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Design
-
+dotnet add package Microsoft.EntityFrameworkCore.Relational
 
 cd Libraries/DataAccess/
 dotnet add package Microsoft.EntityFrameworkCore
