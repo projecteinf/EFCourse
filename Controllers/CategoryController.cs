@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace UdemyCourse.Controllers;
+namespace UdemyCourse.Controllers
 {
     public class CategoryController : Controller
     {
@@ -14,4 +14,3 @@ namespace UdemyCourse.Controllers;
         }
     }
 }
-```
