@@ -1,4 +1,4 @@
-namespace UdemyCourse.Models;
+namespace UdemyCourse.Model.Models;
 
 public class ErrorViewModel
 {
