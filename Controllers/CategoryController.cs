@@ -17,7 +17,7 @@ namespace UdemyCourse.Controllers
         }
         public IActionResult Index()
         {
-            List<Category> objList = _db.Categories.ToList();
+            List<Category> categories = _db.Categories.ToList();
             return View();
         }
     }
