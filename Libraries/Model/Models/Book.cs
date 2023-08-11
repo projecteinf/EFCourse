@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using UdemyCourse.Model.Models;
 public class Book
 {
     [Key]
@@ -13,4 +14,5 @@ public class Book
     public double price { get; set; }
     [NotMapped] // Atribut de visualització
     public string PriceRange { get; set; }
+    public Category Category { get; set; }
 }
