@@ -12,3 +12,7 @@ dotnet run
 
 dotnet ef migrations add "Initial migration"
 dotnet ef database update
+
+# Github oficial del curs
+
+https://github.com/bhrugen/WizLib_EFCore/tree/master
