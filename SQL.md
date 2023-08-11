@@ -22,6 +22,7 @@ go
 ```
 # Describe table
 ```sql
+use EFCourse;
 :setvar SQLCMDMAXVARTYPEWIDTH 30
 :setvar SQLCMDMAXFIXEDTYPEWIDTH 30
 exec sp_columns Genres

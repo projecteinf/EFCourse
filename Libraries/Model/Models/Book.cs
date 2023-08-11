@@ -14,5 +14,7 @@ public class Book
     public double price { get; set; }
     [NotMapped] // Atribut de visualització
     public string PriceRange { get; set; }
-    public Category Category { get; set; }
+    [ForeignKey("Category")] // Category és el nom de la taula a la que fa referència
+    public int CatId { get; set; } // CatId és el nom que volem donar a la clau forana
+    public Category Category { get; set; }  // Creació de la relació
 }
