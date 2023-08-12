@@ -8,6 +8,8 @@ using UdemyCourse.Model.Models;
 
 namespace UdemyCourse.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _db;
@@ -15,6 +17,7 @@ namespace UdemyCourse.Controllers
         {
             _db = db;
         }
+        [HttpGet]
         public IActionResult Index()
         {
             List<Category> categories = _db.Categories.ToList();
