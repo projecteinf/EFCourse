@@ -16,3 +16,9 @@ dotnet ef database update
 # Github oficial del curs
 
 https://github.com/bhrugen/WizLib_EFCore/tree/master
+
+# Test Swagger
+
+[Link](http://localhost:5069/swagger/index.html)
+
+Retorna HTML. S'hauria de fer que retornés un JSON
