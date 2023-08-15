@@ -1,8 +1,5 @@
-using Microsoft.AspNetCore.Builder;
-using UdemyCourse.DataAccess;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore.Design;
+using UdemyCourse.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
