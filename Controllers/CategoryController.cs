@@ -44,5 +44,16 @@ namespace UdemyCourse.Controllers
             }
             return View(category);
         }
+
+        public IActionResult Delete(int id)
+        {
+            Category category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            if (category == null) return NotFound();
+            else {
+                _db.Categories.Remove(category);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }   
+        }
     }
 }
