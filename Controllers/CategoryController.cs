@@ -30,5 +30,19 @@ namespace UdemyCourse.Controllers
                 else return View(category);
             }
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                if (category.Id == 0) _db.Categories.Add(category);
+                else _db.Categories.Update(category);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }
     }
 }
