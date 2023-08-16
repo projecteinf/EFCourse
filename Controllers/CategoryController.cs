@@ -20,5 +20,15 @@ namespace UdemyCourse.Controllers
             List<Category> categories = _db.Categories.ToList();
             return View(categories);
         }
+        public IActionResult Upsert(int? id)
+        {
+            Category category = new Category();
+            if (id == null) return View(category);
+            else {
+                category = _db.Categories.FirstOrDefault(c => c.Id == id);
+                if (category == null) return NotFound();
+                else return View(category);
+            }
+        }
     }
 }
